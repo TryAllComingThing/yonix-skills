@@ -1,0 +1,12 @@
+interface:
+  display_name: prd writer
+  short_description: 将业务材料或现有 PRD 编写、补全或定向修订为可评审、可开发的需求文档；交付目标包含原型时补齐页面、动作、验收及模拟约定。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

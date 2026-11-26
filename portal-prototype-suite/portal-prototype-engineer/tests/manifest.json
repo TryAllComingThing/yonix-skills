@@ -1,0 +1,165 @@
+{
+  "created_utc": "2026-11-15T07:32:53.189314+00:00",
+  "project": "/mnt/data/prototype-engineer",
+  "baseline": null,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d696b003fd405467754259910bc97a580b436e8ded6e595fcae1d4618b96b120"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "a8108d65f79fc60621bcf8636265e80ff8a637a26186d28a466801a53065d3a4"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "da1bbf939e61b59823ccfbc4e80c9662d926e50f4aa905437295f944e965851a"
+    },
+    {
+      "path": "assets/templates/acceptance-report.md",
+      "sha256": "a60508e9e36842a49bc4828c193f8c4342b15acb2bb4b987d92499d64cf6fa31"
+    },
+    {
+      "path": "assets/templates/change-plan.md",
+      "sha256": "d74ad928cb60f84c5c0bfb3f543515c0d1c0354bd7b9ab8f2108684ca9782a3f"
+    },
+    {
+      "path": "assets/templates/interaction-contract.md",
+      "sha256": "37df23abfd4b30a089cfd662ee0dffbc8ab8f98d2fe2e2e9c6ef188b3a96a352"
+    },
+    {
+      "path": "assets/templates/page-contract.md",
+      "sha256": "c3e2747aaa095a004dbc5919b3877977c215bb4010e9e5e5f67789bec0d89004"
+    },
+    {
+      "path": "assets/templates/review-report.md",
+      "sha256": "5c600b2e107747b646c64d7b2ab1caf3d81252cf59cbed854a729ca5de984968"
+    },
+    {
+      "path": "references/acceptance-matrix.md",
+      "sha256": "be071a458c94f1cc3aef78980260d3286e6b4340c3e87b17f3b630f256652288"
+    },
+    {
+      "path": "references/frontend-engineering.md",
+      "sha256": "9d73f7d321d73fe078b132aa81498976acc18b5ba88a3951c908e108c473cd29"
+    },
+    {
+      "path": "references/product-prototype.md",
+      "sha256": "845a3f5b0875f09286b329fd54678534ecde77bf1607c9b20412475230feed84"
+    },
+    {
+      "path": "references/quality-gates.md",
+      "sha256": "02c42ba437c6694885d940df6b9b9c9db6c9e2c8a841b011b9226760a446098f"
+    },
+    {
+      "path": "references/screenshot-diagnosis.md",
+      "sha256": "a235545575fe12875157f41884ea38cd907a22950c209e3b9fefd1bc111eb7ff"
+    },
+    {
+      "path": "references/ui-ux-expert.md",
+      "sha256": "44152fc5ae11b6239361f00e4a93b24f7088b909ff54507f885f7e12c59a02ae"
+    },
+    {
+      "path": "references/version-management.md",
+      "sha256": "c4303080921994acc5148558ce4dfb315c7d498cd6d27d745100c45f77454b39"
+    },
+    {
+      "path": "references/workflow.md",
+      "sha256": "4156f64bce0e6c941e47ae72c4c045c0dab482a1ee3c50a27700a154d502f32e"
+    },
+    {
+      "path": "scripts/__pycache__/common.cpython-313.pyc",
+      "sha256": "67ab3206209f3a5542ca21ccc1daf6ddccc2430c1f83095984dc4b64ed4c62fa"
+    },
+    {
+      "path": "scripts/build_evidence.py",
+      "sha256": "3feb8e9bc3211c59535190f3b090511b8862ee7524f1314cb2af3809f260f537"
+    },
+    {
+      "path": "scripts/check_components.py",
+      "sha256": "599b0588759edba608e6b990aed47920bdf6e4c34e60a9bd16fb370b6d9d9e32"
+    },
+    {
+      "path": "scripts/check_design_tokens.py",
+      "sha256": "6f506576f77908896116eea57c18831bd63093eba06bbf38601baf2f6d3bd663"
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "483bedb2f94209f07676a24e0b83688abede69455963f2c7fd420c1ae0654245"
+    },
+    {
+      "path": "scripts/inspect_css.py",
+      "sha256": "814aefa5dc1b803268f244c57b9437bd3b9ca73b7da29032104ab46b7b4865d2"
+    },
+    {
+      "path": "scripts/inspect_project.py",
+      "sha256": "4bb25b83bcbe6ff337e561a488bde648bf2d25b612d80d0bb38e04f83020a979"
+    },
+    {
+      "path": "scripts/run_interaction_tests.py",
+      "sha256": "b5361233330bec7d904127b7c5b9c23aec6318bd23c9fd5416760f75be631adb"
+    },
+    {
+      "path": "scripts/run_visual_regression.py",
+      "sha256": "86d0770021104ca14d99a9f6c33621b1eb10f8a2f5af6c8ee43472e813fa518f"
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "c50182a2819622498d0abf2f0120c32c11586041bf0d240c3e0a370e0dcddad4"
+    },
+    {
+      "path": "tests/__pycache__/test_static.cpython-313.pyc",
+      "sha256": "7bf0ea0d0781b96d463ac232f3c47f1a6abc4f98f8dad3b6522bd749f7819008"
+    },
+    {
+      "path": "tests/evidence/changed.png",
+      "sha256": "48c76196c7706bc262270955383644386683acb9be0b500a80338255ac5ac904"
+    },
+    {
+      "path": "tests/evidence/dialog-closed.png",
+      "sha256": "af79df8f43750d4f379e3f9005f91dff4fdd4362ba67be6c8f5b523dcbc1a0be"
+    },
+    {
+      "path": "tests/evidence/visual-diff.png",
+      "sha256": "05713dbacb00cfa92e8cad1581147b0f1349f6ee14c97d122440aff36011bd53"
+    },
+    {
+      "path": "tests/fixtures/sample.html",
+      "sha256": "07963ef2e0d988fc3c0486d548717ad17efaaaae6f7eaea02524fcd929ada6ec"
+    },
+    {
+      "path": "tests/interaction-result.json",
+      "sha256": "1e5c2702397a60f868c5625e0d6ae98d509a8a49c164eb9a8026490535571e57"
+    },
+    {
+      "path": "tests/scenarios/dialog.json",
+      "sha256": "329aea1348544bdef2120d954b851d97a0e27e3ce6248e8c0e15e81022ae27a2"
+    },
+    {
+      "path": "tests/test_static.py",
+      "sha256": "e1850048667e4728f651133bebde6ce799389e1cc371349e34bb5065c456c9b2"
+    },
+    {
+      "path": "tests/visual-negative-result.json",
+      "sha256": "148d8c1052aa840c0d915447ec2c8d138e9c8cfc72736bdda0e8fc39810b01da"
+    },
+    {
+      "path": "tests/visual-result.json",
+      "sha256": "9fac149c4562339314f5da35b182e18b8fc114d4a39169378102571687f609ec"
+    }
+  ],
+  "reports": [
+    {
+      "path": "tests/interaction-result.json",
+      "sha256": "1e5c2702397a60f868c5625e0d6ae98d509a8a49c164eb9a8026490535571e57",
+      "reported_status": "PASS"
+    },
+    {
+      "path": "tests/visual-result.json",
+      "sha256": "9fac149c4562339314f5da35b182e18b8fc114d4a39169378102571687f609ec",
+      "reported_status": "PASS"
+    }
+  ],
+  "acceptance": "NOT_ASSESSED",
+  "warning": "This manifest does not claim tests were run; inspect reports for evidence"
+}

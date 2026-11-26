@@ -1,0 +1,168 @@
+# PPT Master Plus Toolset
+
+This directory contains user-facing scripts for conversion, project setup, PPTX intake, SVG processing, native round-trip editing, export, recorded narration, and image generation. Every public entrypoint uses the same integrated PPT Master 5.1 engine.
+
+## Directory Layout
+
+- Top-level `scripts/`: runnable entry scripts
+- `scripts/source_to_md/`: source-document → Markdown converters (`pdf_to_md.py`, `doc_to_md.py`, `excel_to_md.py`, `ppt_to_md.py`, `web_to_md.py`)
+- `scripts/image_backends/`: internal provider implementations used by `image_gen.py`
+- `scripts/tts_backends/`: internal TTS provider implementations used by `notes_to_audio.py`
+- `scripts/template_import/`: internal PPTX reference-preparation helpers used by `pptx_template_import.py`
+- `scripts/svg_finalize/`: internal post-processing helpers used by `finalize_svg.py`
+- `scripts/docs/`: topic-focused script documentation
+- `scripts/assets/`: static assets consumed by scripts
+
+## Quick Start
+
+Typical end-to-end workflow:
+
+```bash
+python3 scripts/source_to_md/pdf_to_md.py <file.pdf>
+# or
+python3 scripts/source_to_md/ppt_to_md.py <deck.pptx>
+python3 scripts/source_to_md/excel_to_md.py <workbook.xlsx>
+python3 scripts/project_manager.py init <project_name> --format ppt169
+python3 scripts/project_manager.py import-sources <project_path> <source_files...> --move
+python3 scripts/total_md_split.py <project_path>
+python3 scripts/finalize_svg.py <project_path>
+python3 scripts/animation_config.py scaffold <project_path>  # optional object-level animation overrides
+python3 scripts/svg_to_pptx.py <project_path>
+```
+
+Template maintenance uses four explicit kinds. Pack resolution is deterministic
+and does not merge design fields:
+
+```bash
+python3 scripts/register_template.py <id> --kind brand|style|layout|pack
+python3 scripts/resolve_template_selection.py --pack <pack_id> \
+  [--brand <brand_id>] [--style <style_id>] [--layout <layout_id>]
+```
+
+## Script Index
+
+| Area | Primary scripts | Documentation |
+|------|-----------------|---------------|
+| Conversion | `source_to_md/pdf_to_md.py`, `source_to_md/doc_to_md.py`, `source_to_md/excel_to_md.py`, `source_to_md/ppt_to_md.py`, `source_to_md/web_to_md.py`, `pptx_intake.py` | [docs/conversion.md](./docs/conversion.md) |
+| Project management | `project_manager.py`, `batch_validate.py`, `generate_examples_index.py`, `error_helper.py`, `pptx_template_import.py` | [docs/project.md](./docs/project.md) |
+| Native round-trip | `pptx_to_svg.py`, `svg_authoring_view.py`, `native_preview.py`, `native_page_kit_fill.py`, `svg_to_pptx.py --roundtrip` | [../workflows/edit-native-pptx.md](../workflows/edit-native-pptx.md) |
+| SVG pipeline | `finalize_svg.py`, `svg_to_pptx.py`, `total_md_split.py`, `svg_quality_checker.py`, `extract_svg_assets.py`, `animation_config.py`, `notes_to_audio.py` | [docs/svg-pipeline.md](./docs/svg-pipeline.md) |
+| Spec maintenance | `update_spec.py` | [docs/update_spec.md](./docs/update_spec.md) |
+| Image tools | `image_gen.py`, `latex_render.py`, `analyze_images.py`, `gemini_watermark_remover.py` | [docs/image.md](./docs/image.md) |
+| Troubleshooting | validation, preview, export, dependency issues | [docs/troubleshooting.md](./docs/troubleshooting.md) |
+
+The optional unified converter is `source_to_md.py`. Advanced native-object,
+structured-layout, round-trip, postflight, preset-shape, boolean-shape, sound,
+and video utilities are indexed in
+[`ppt-master-capability-overlay.md`](../references/ppt-master-capability-overlay.md).
+They do not replace Confirm UI or Live Preview, and `--quick-generate` is not a
+supported Plus mode.
+
+## High-Frequency Commands
+
+Conversion:
+
+```bash
+python3 scripts/source_to_md/pdf_to_md.py <file.pdf>
+python3 scripts/source_to_md/ppt_to_md.py <deck.pptx>
+python3 scripts/source_to_md/doc_to_md.py <file.docx>
+python3 scripts/source_to_md/excel_to_md.py <workbook.xlsx>
+python3 scripts/source_to_md/web_to_md.py <url>
+```
+
+Project setup:
+
+```bash
+python3 scripts/project_manager.py init <project_name> --format ppt169
+python3 scripts/project_manager.py import-sources <project_path> <source_files...> --move
+python3 scripts/project_manager.py validate <project_path>
+```
+
+PPTX design-template import:
+
+```bash
+python3 scripts/project_manager.py import-template <project_path> <template.pptx>
+python3 scripts/brand_import_ui/server.py <project_path>
+python3 scripts/import_brand.py <template.pptx> --brand-id <brand_id>
+# Rebuild an existing Brand only after a fresh Page Kit confirmation:
+python3 scripts/import_brand.py <template.pptx> --brand-id <brand_id> --replace
+```
+
+Brand import always creates identity tokens and a user-confirmed Page Kit. The
+Brand Import Web writes `analysis/brand_import_selection.json`: special pages
+retain only the user-confirmed native prototypes; each content page retains its linked
+Master/Layout background images, text and placeholders plus an empty editable
+large-title frame. Every other slide-local content object is removed. Optional
+Icon or Chart grammar Layouts remain separate explicit registrations and are
+never implied by Brand import.
+
+Native round-trip edit or template fill:
+
+```bash
+python3 scripts/pptx_to_svg.py <source.pptx> -o <project_path> --inheritance-mode both --roundtrip
+python3 scripts/native_preview.py prepare <project_path>
+python3 scripts/svg_quality_checker.py <project_path> --roundtrip
+python3 scripts/svg_to_pptx.py <project_path> --roundtrip
+```
+
+Brand Page Kit fill (after `execute-brand-page-kit`):
+
+Use a page plan that selects the approved native prototype for each output
+page. Repeating `--role content` is intentionally rejected whenever several
+content prototypes exist, preventing silent reuse of the first layout.
+
+```bash
+python3 scripts/project_manager.py execute-brand-page-kit projects/demo \
+  --page-plan projects/demo/page_kit_execution_plan.json \
+  --output projects/demo/output/native_seed.pptx
+```
+
+```bash
+python3 scripts/native_page_kit_fill.py <native_seed.pptx> \
+  --execution-roster <native_seed.native_page_kit_execution.json> \
+  --plan <slot_fill_plan.json> --output <new_deck.pptx>
+```
+
+On special pages, the fill plan may name only slots declared editable in the
+execution roster. On a sanitized content shell, it may replace the retained
+large-title slot and add new slide-local body objects above the locked
+Master/Layout. It writes a new package without restoring any removed source
+example object.
+
+Post-processing and export:
+
+```bash
+python3 scripts/extract_svg_assets.py <svg_dir> --icons-dir <icons_dir> --inplace --id-prefix <prefix>  # optional: shrink imported/reference SVGs before AI review
+python3 scripts/total_md_split.py <project_path>
+python3 scripts/finalize_svg.py <project_path>
+python3 scripts/svg_to_pptx.py <project_path>
+```
+
+Image generation:
+
+```bash
+python3 scripts/latex_render.py <project_path>
+python3 scripts/latex_render.py <project_path> --providers codecogs,quicklatex,mathpad,wikimedia
+python3 scripts/image_gen.py "A modern futuristic workspace"
+python3 scripts/image_gen.py --list-backends
+python3 scripts/analyze_images.py <project_path>/images
+```
+
+## Recommendations
+
+- Keep one user-facing entry point per workflow at the top level of `scripts/`
+- Move provider-specific or helper internals into subdirectories
+- Prefer the unified entry points `project_manager.py`, `finalize_svg.py`, and `image_gen.py`
+- Prefer `svg_final/` over `svg_output/` when exporting
+
+## Related Docs
+
+- [Conversion Tools](./docs/conversion.md)
+- [Project Tools](./docs/project.md)
+- [SVG Pipeline Tools](./docs/svg-pipeline.md)
+- [Image Tools](./docs/image.md)
+- [Troubleshooting](./docs/troubleshooting.md)
+- [Skill Entry](../SKILL.md)
+- [Upstream provenance and manual merge policy](../references/upstream.md)
+
+_Last updated: 2026-04-09_

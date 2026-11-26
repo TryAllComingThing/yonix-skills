@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "url": null,
+  "html": "../portal-demo.html",
+  "steps": [
+    {
+      "step": 0,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 1,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 2,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 3,
+      "action": "fill",
+      "status": "PASS"
+    },
+    {
+      "step": 4,
+      "action": "text",
+      "status": "PASS"
+    },
+    {
+      "step": 5,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 6,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 7,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 8,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 9,
+      "action": "text",
+      "status": "PASS"
+    },
+    {
+      "step": 10,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 11,
+      "action": "text",
+      "status": "PASS"
+    },
+    {
+      "step": 12,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 13,
+      "action": "screenshot",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "scenario": "tests/scenarios/portal-create-journey.json"
+}

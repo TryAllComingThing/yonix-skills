@@ -1,0 +1,26 @@
+{
+  "js_syntax": {
+    "status": "PASS",
+    "checked": 107,
+    "errors": []
+  },
+  "file": "/mnt/data/MaaS_D2_V10.71_Endpoint_Detail_Remove_Tabs.html",
+  "bytes": 3289629,
+  "script_tags": 107,
+  "inline_script_tags": 107,
+  "style_tags": 136,
+  "inline_event_handlers": 0,
+  "duplicate_ids": {},
+  "external_dependencies": [],
+  "global_render_definitions": 1,
+  "render_assignments": 2,
+  "innerHTML_mentions": 42,
+  "errors": [],
+  "warnings": [
+    "global render assignment detected; inspect override chain manually",
+    "many inline script/style tags; inspect maintainability and cascade",
+    "innerHTML usage detected; inspect untrusted data escaping"
+  ],
+  "gate_g0": "PASS_WITH_WARNINGS",
+  "scope": "static structural audit only; G1-G4 NOT_RUN"
+}

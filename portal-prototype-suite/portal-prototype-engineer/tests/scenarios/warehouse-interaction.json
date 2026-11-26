@@ -1,0 +1,1 @@
+{"viewport":{"width":1440,"height":900},"steps":[{"action":"visible","selector":"#new-task"},{"action":"click","selector":"#new-task"},{"action":"visible","selector":"#task-dialog"},{"action":"fill","selector":"#doc-id","value":"IN-2026-001"},{"action":"click","selector":"#save-task"},{"action":"text","selector":"#task-count","value":"2"}]}

@@ -1,0 +1,8 @@
+test_coverage_two_equal_gates (test_v2_portal.PortalV2Tests.test_coverage_two_equal_gates) ... ok
+test_preserved_legacy_tools (test_v2_portal.PortalV2Tests.test_preserved_legacy_tools) ... ok
+test_spec_fixture_build (test_v2_portal.PortalV2Tests.test_spec_fixture_build) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.382s
+
+OK

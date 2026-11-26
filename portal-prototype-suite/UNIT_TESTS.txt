@@ -1,0 +1,15 @@
+test_historical_signature_and_blocked_fork (test_m2_replay.TestReplay.test_historical_signature_and_blocked_fork) ... ok
+test_missing_baseline_fails_closed (test_m2_replay.TestReplay.test_missing_baseline_fails_closed) ... ok
+test_dom_locator_blind_domain (test_m3_closure.Closure.test_dom_locator_blind_domain) ... ok
+test_interaction_blind_domain (test_m3_closure.Closure.test_interaction_blind_domain) ... ok
+test_runtime_themes_blind_domain (test_m3_closure.Closure.test_runtime_themes_blind_domain) ... ok
+test_runtime_themes_negative (test_m3_closure.Closure.test_runtime_themes_negative) ... ok
+test_three_way_clean_and_conflict (test_m3_closure.Closure.test_three_way_clean_and_conflict) ... ok
+test_ambiguous_static_text_blocks (test_m4_autorepair.M4Autorepair.test_ambiguous_static_text_blocks) ... ok
+test_input_not_overwritten (test_m4_autorepair.M4Autorepair.test_input_not_overwritten) ... ok
+test_theme_source_repair (test_m4_autorepair.M4Autorepair.test_theme_source_repair) ... ok
+test_warehouse_static_text_removal (test_m4_autorepair.M4Autorepair.test_warehouse_static_text_removal) ... ok
+test_red_single_and_ambiguous (test_m5_capabilities.M5.test_red_single_and_ambiguous) ... ok
+test_vue_missing_metadata_blocked (test_m5_capabilities.M5.test_vue_missing_metadata_blocked) ... ok
+test_vue_owner_simulated (test_m5_capabilities.M5.test_vue_owner_simulated) ... ok
+test_components (test_static.TestStatic.test_components) ... 

@@ -1,0 +1,1 @@
+{"viewport":{"width":1280,"height":800},"steps":[{"action":"visible","selector":"#open"},{"action":"click","selector":"#open"},{"action":"visible","selector":"#dlg"},{"action":"click","selector":"#close"},{"action":"hidden","selector":"#dlg"},{"action":"screenshot","name":"dialog-closed"}]}

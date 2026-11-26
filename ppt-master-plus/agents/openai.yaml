@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Master Plus"
+  short_description: "生成、原生编辑或从 PPTX 模板创建可编辑演示文稿"
+  default_prompt: "Use $ppt-master-plus, select Generate PPTX, Edit Native PPTX, or Create PPTX from Template from my intent, and preserve the Plus confirmation and preview workflow."

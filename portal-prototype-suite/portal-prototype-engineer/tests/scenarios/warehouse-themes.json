@@ -1,0 +1,1 @@
+{"themes":["day","night"],"selectors":[{"selector":".action","properties":["background-color","color"],"must_vary":["background-color"],"expected":{"day":{"background-color":"rgb(21, 84, 180)"},"night":{"background-color":"rgb(118, 167, 255)"}}},{"selector":".card","properties":["border-top-color","color"],"must_vary":["border-top-color"]}]}

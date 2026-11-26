@@ -1,0 +1,1 @@
+{"url":"http://127.0.0.1:8765/warehouse-operations.html","pages":["overview","orders"],"themes":["light","dark"],"route_js":"document.body.dataset.page=route","theme_js":"document.documentElement.dataset.theme=theme","required_selectors":["body"],"viewport":{"width":960,"height":700}}

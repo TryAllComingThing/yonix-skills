@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "url": null,
+  "html": "../portal-demo-revised.html",
+  "steps": [
+    {
+      "step": 0,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 1,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 2,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 3,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 4,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 5,
+      "action": "hidden",
+      "status": "PASS"
+    },
+    {
+      "step": 6,
+      "action": "click",
+      "status": "PASS"
+    },
+    {
+      "step": 7,
+      "action": "visible",
+      "status": "PASS"
+    },
+    {
+      "step": 8,
+      "action": "screenshot",
+      "status": "PASS"
+    }
+  ],
+  "page_errors": [],
+  "scenario": "tests/scenarios/portal-revision-journey.json"
+}

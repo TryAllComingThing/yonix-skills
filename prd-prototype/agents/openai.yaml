@@ -1,0 +1,13 @@
+interface:
+  display_name: PRD Prototype
+  short_description: 将已有产品需求文档转化为独立离线 HTML 交互原型并验证关键业务路径
+  default_prompt: 使用 $prd-prototype 将指定 PRD 转成独立离线 HTML 交互原型，并提供实际走查结果。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

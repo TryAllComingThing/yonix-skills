@@ -1,0 +1,4 @@
+Task,Mode,Static,MockBrowser,CodexNative,Visual,G4,Result
+A-NewManagementPlatform,A,PASS_fixture,PASS_fixture,NOT_RUN,NOT_RUN,NOT_RUN,BLOCKED_ENV
+B-MaaSIncremental,B,PASS_maas,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,BLOCKED_ENV
+C-ScreenshotRestore,C,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,NOT_RUN,BLOCKED_ENV

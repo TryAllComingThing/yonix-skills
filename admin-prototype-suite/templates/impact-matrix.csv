@@ -1,0 +1,2 @@
+change_id,page_id,component,field_or_action,source_authority,affected_entity,affected_state,dependency,positive_case,negative_case,regression_case,permission_impact,visual_impact,owner,status
+CR-EXAMPLE,USR-01,UserDialog,save,User requirement,user,editingDraft,savedUser,save updates list,cancel preserves original,detail reflects save,edit permission,dialog alignment,frontend,NOT_RUN

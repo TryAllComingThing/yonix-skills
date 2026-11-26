@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {
+      "id": "theme",
+      "bad": "/path/to/old.html",
+      "good": "/path/to/fixed.html",
+      "bad_absent": "m371-dark-code-response-examples",
+      "good_present": "m371-dark-code-response-examples"
+    }
+  ]
+}

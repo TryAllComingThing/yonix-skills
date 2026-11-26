@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portal Prototype Engineering Expert"
+  short_description: "High-fidelity Portal product, UI/UX, Mock and frontend engineering"
+  default_prompt: "Use $portal-prototype-engineer to plan or revise a high-fidelity interactive Portal. Identify the authoritative design system, model the user journey, implement reusable components and Mock interactions, then provide browser-tested evidence."

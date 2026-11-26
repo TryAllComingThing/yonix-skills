@@ -1,0 +1,37 @@
+{
+  "themes": [
+    "steady-blue",
+    "vibrant-tech-blue",
+    "deep-ocean-tech-blue",
+    "bright-sky-blue",
+    "mist-gray-blue",
+    "glacier-cyan",
+    "forest-business-green",
+    "blue-violet-future-tech"
+  ],
+  "setup_js": "()=>{document.querySelector('.login-submit')?.click();S.page='POR-02';S.lang='zh';render()}",
+  "theme_js": "S.theme=theme;render()",
+  "selectors": [
+    {
+      "selector": ".m369-card",
+      "properties": [
+        "background-color",
+        "color",
+        "border-top-color"
+      ],
+      "must_vary": [
+        "background-color"
+      ]
+    },
+    {
+      "selector": ".v715-category-bar",
+      "properties": [
+        "background-color",
+        "color"
+      ],
+      "must_vary": [
+        "background-color"
+      ]
+    }
+  ]
+}

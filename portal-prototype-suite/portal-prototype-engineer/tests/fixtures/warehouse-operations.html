@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8"><style>
+:root,[data-theme="day"]{--brand:#1554b4;--surface:#ffffff;--ink:#202a3b;--border:#d4dce8}
+[data-theme="night"]{--brand:#76a7ff;--surface:#1c2638;--ink:#ffffff;--border:#42516c}
+body{margin:0;background:var(--surface);color:var(--ink);font:14px Arial,sans-serif}
+header{padding:24px;border-bottom:1px solid var(--border)}main{max-width:900px;margin:24px auto}
+.action{background:var(--brand);color:var(--surface);border:0;padding:12px 20px;border-radius:5px}
+.card{border:1px solid var(--border);padding:18px;border-radius:6px;margin-top:16px}
+.dialog{background:var(--surface);color:var(--ink);border:1px solid var(--border);padding:24px}
+</style></head><body><header><h1>仓储运营管理</h1></header><main><button class="action" id="new-task">新增入库任务</button><section class="card" id="task-card"><h2>待处理任务</h2><div id="task-count">1</div></section><dialog class="dialog" id="task-dialog"><h2>创建入库任务</h2><label>单据编号<input id="doc-id" /></label><button id="save-task" class="action">保存</button><button id="close-task">关闭</button></dialog></main>
+<script>document.querySelector('#new-task').onclick=()=>document.querySelector('#task-dialog').showModal();document.querySelector('#close-task').onclick=()=>document.querySelector('#task-dialog').close();document.querySelector('#save-task').onclick=()=>{if(document.querySelector('#doc-id').value.trim()){document.querySelector('#task-count').textContent='2';document.querySelector('#task-dialog').close()}}</script></body></html>

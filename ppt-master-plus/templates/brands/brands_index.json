@@ -1,0 +1,155 @@
+{
+  "accenture": {
+    "summary": "Accenture-style consulting and technology-services identity — violet accent on black for transformation, technology, and delivery decks",
+    "primary_color": "#A100FF"
+  },
+  "alibaba": {
+    "summary": "Alibaba-style commerce and cloud identity — signature orange on black for platform, merchant, and cloud solution decks",
+    "primary_color": "#FF6A00"
+  },
+  "anthropic": {
+    "summary": "Anthropic / Claude brand family — AI research, product talks, developer conferences, technical training, and launches",
+    "primary_color": "#D97757"
+  },
+  "apple": {
+    "summary": "Apple brand identity - extreme whitespace, cinematic product layouts, San Francisco style typography, clean and premium minimalism.",
+    "primary_color": "#000000"
+  },
+  "apsara_yunqi_26_light": {
+    "summary": "2026 云栖大会展台浅色主题 — 蓝绿流光渐变 KV 背景 + 云栖蓝/绿主色系，适合科技大会、展台演讲、产品发布类演示",
+    "primary_color": "#0055FF"
+  },
+  "aws": {
+    "summary": "AWS-style cloud identity — signature orange on deep navy for cloud architecture, migration, and well-architected review decks",
+    "primary_color": "#FF9900"
+  },
+  "bain": {
+    "summary": "Bain-style consulting identity — scarlet red on restrained neutrals for results-oriented strategy and performance decks",
+    "primary_color": "#EE3224"
+  },
+  "bcg": {
+    "summary": "BCG-style consulting identity — forest green and warm neutrals for growth strategy, transformation, and advantage decks",
+    "primary_color": "#147B58"
+  },
+  "deloitte": {
+    "summary": "Deloitte-style professional-services identity — signature green on black and neutrals for audit, tax, risk, and advisory decks",
+    "primary_color": "#86BC25"
+  },
+  "ffa_shenzhen": {
+    "summary": "Flink Forward Asia (FFA) Shenzhen Forum identity for technical conference presentations.",
+    "primary_color": "#9966F7"
+  },
+  "flink_ai_style": {
+    "summary": "Full-stack AI native stream computing presentation style, deep navy background with Flink green and purple accents.",
+    "primary_color": "#04CF82"
+  },
+  "google": {
+    "summary": "Google brand identity — multi-product corporate decks, developer events (Google I/O style), education and training in the Google ecosystem",
+    "primary_color": "#4285F4"
+  },
+  "huawei": {
+    "summary": "Huawei-style enterprise identity — restrained red accent on near-black and gray for ICT solution, product, and partner decks",
+    "primary_color": "#CF0A2C"
+  },
+  "ibm": {
+    "summary": "IBM-style enterprise identity — Carbon blue on a disciplined gray scale for hybrid cloud, AI, and enterprise consulting decks",
+    "primary_color": "#0F62FE"
+  },
+  "jpmorgan": {
+    "summary": "JPMorgan Chase-style financial-institution identity — corporate blue on navy and neutrals for research, banking, and internal governance decks",
+    "primary_color": "#117ACA"
+  },
+  "linear": {
+    "summary": "Linear brand identity - ultra-minimalist developer aesthetic, deep dark canvas, neon purple micro-glows, precision spacing.",
+    "primary_color": "#5E6AD2"
+  },
+  "magazine": {
+    "summary": "Magazine & E-Ink style - warm tones, serif/sans-serif typography contrast, literary layouts",
+    "primary_color": "#262626"
+  },
+  "mckinsey": {
+    "summary": "McKinsey-style consulting identity — deep navy and electric blue for strategy, diagnostic, and executive decision decks",
+    "primary_color": "#051C2C"
+  },
+  "microsoft": {
+    "summary": "Microsoft-style enterprise technology identity — four-square product spectrum on neutral grays for Microsoft 365, Azure, and IT program decks",
+    "primary_color": "#00A4EF"
+  },
+  "notion": {
+    "summary": "Notion brand identity - warm paper tones, serif headings, outline card grids, minimalist Knowledge Management aesthetic.",
+    "primary_color": "#37352F"
+  },
+  "nvidia": {
+    "summary": "NVIDIA-style accelerated-computing identity — signature green on near-black for AI, GPU, and data-center technical decks",
+    "primary_color": "#76B900"
+  },
+  "pwc": {
+    "summary": "PwC-style professional-services identity — warm orange-to-rose spectrum on black for assurance, tax, and advisory decks",
+    "primary_color": "#DB4E18"
+  },
+  "stripe": {
+    "summary": "Stripe brand identity - elegant diagonal color mesh gradients, clean light/dark interfaces, Indigo primary, premium commercial aesthetic.",
+    "primary_color": "#635BFF"
+  },
+  "swiss_grid": {
+    "summary": "",
+    "primary_color": "#1D3557"
+  },
+  "swiss_style": {
+    "summary": "Swiss Internationalism style - Klein Blue high contrast accent, strict grid locking, typography weight contrasts",
+    "primary_color": "#0020C2"
+  },
+  "tencent": {
+    "summary": "Tencent-style internet and cloud identity — measured blue on light neutrals for platform, cloud, and ecosystem decks",
+    "primary_color": "#3458B0"
+  },
+  "xiaomi": {
+    "summary": "Xiaomi-style consumer-technology identity — signature orange on clean white for product launches, ecosystem, and retail decks",
+    "primary_color": "#FF6900"
+  },
+  "中国电信": {
+    "summary": "China Telecom related briefings, 政企数字化方案, 转型规划, 内部汇报.",
+    "primary_color": "#C00000"
+  },
+  "中国电建": {
+    "summary": "POWERCHINA brand identity for engineering project reports, technical proposals, business negotiations, and corporate promotion",
+    "primary_color": "#004EA1"
+  },
+  "中国电建_常规": {
+    "summary": "Engineering project reports, technical proposal presentations, business negotiations, corporate promotion, annual summaries.",
+    "primary_color": "#00418D"
+  },
+  "中国电建_现代": {
+    "summary": "Major engineering reports, international market promotion, technology achievement showcases, high-end business negotiations.",
+    "primary_color": "#00418D"
+  },
+  "中汽研": {
+    "summary": "CATARC brand identity for product certification, evaluation reports, automotive technology promotion, and business visits",
+    "primary_color": "#004098"
+  },
+  "中汽研_商务": {
+    "summary": "Product certification display, evaluation presentations, technology promotion, high-end business reporting.",
+    "primary_color": "#003366"
+  },
+  "中汽研_常规": {
+    "summary": "Product certification display, evaluation presentations, technology promotion, business visits.",
+    "primary_color": "#004098"
+  },
+  "中汽研_现代": {
+    "summary": "Forward-looking technology showcases, strategic releases, high-end business reporting.",
+    "primary_color": "#001529"
+  },
+  "招商银行": {
+    "summary": "交易银行产品介绍、销售收款方案汇报、客户案例拆解、分行培训材料.",
+    "primary_color": "#C8152D"
+  },
+  "重庆大学": {
+    "summary": "Academic defense, research reports, teaching presentations, scholarly exchange.",
+    "primary_color": "#006BB7"
+  },
+  "飞天发布": {
+    "summary": "从“飞天发布时刻PPT模板”导入的品牌身份，适用于与源模板一致的演示场景",
+    "primary_color": "#2609F5",
+    "page_kit_layout_id": "飞天发布_page_kit"
+  }
+}
