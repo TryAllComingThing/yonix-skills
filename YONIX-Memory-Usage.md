@@ -20,9 +20,9 @@ fi
 Codex（支持用户级 Skill 的版本）：
 
 ```bash
-mkdir -p "$HOME/.codex/skills"
-if [ ! -e "$HOME/.codex/skills/yonix-memory-expert" ] && [ ! -L "$HOME/.codex/skills/yonix-memory-expert" ]; then
-  cp -R yonix-memory-expert "$HOME/.codex/skills/"
+mkdir -p "$HOME/.agents/skills"
+if [ ! -e "$HOME/.agents/skills/yonix-memory-expert" ] && [ ! -L "$HOME/.agents/skills/yonix-memory-expert" ]; then
+  cp -R yonix-memory-expert "$HOME/.agents/skills/"
 else
   echo '已有 Skill，请先备份升级'
 fi
